@@ -15,6 +15,17 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+private slots:
+    void on_pushButton_target_submit_clicked();
+
+    void on_pushButton_task_add_clicked();
+
+    void on_pushButton_quantization_submit_clicked();
+
+    void on_pushButton_advance_submit_clicked();
+
+    void on_pushButton_advance_setting_clicked();
+
 private:
     Ui::MainWindow *ui;
 };
