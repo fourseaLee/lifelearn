@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>LifeLearn</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QTabWidget" name="tabWidget">
@@ -26,11 +26,11 @@
     <property name="currentIndex">
      <number>0</number>
     </property>
-    <widget class="QWidget" name="tab">
+    <widget class="QWidget" name="tab_plan">
      <attribute name="title">
       <string>规划</string>
      </attribute>
-     <widget class="QPushButton" name="pushButton">
+     <widget class="QPushButton" name="pushButton_target_submit">
       <property name="geometry">
        <rect>
         <x>430</x>
@@ -43,7 +43,7 @@
        <string>提交</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton_3">
+     <widget class="QPushButton" name="pushButton_task_add">
       <property name="geometry">
        <rect>
         <x>430</x>
@@ -56,7 +56,7 @@
        <string>添加</string>
       </property>
      </widget>
-     <widget class="QWidget" name="">
+     <widget class="QWidget" name="layoutWidget">
       <property name="geometry">
        <rect>
         <x>11</x>
@@ -65,9 +65,9 @@
         <height>242</height>
        </rect>
       </property>
-      <layout class="QGridLayout" name="gridLayout">
+      <layout class="QGridLayout" name="gridTarget">
        <item row="0" column="1">
-        <widget class="QLineEdit" name="lineEdit">
+        <widget class="QLineEdit" name="lineEdit_target">
          <property name="minimumSize">
           <size>
            <width>0</width>
@@ -77,7 +77,7 @@
         </widget>
        </item>
        <item row="0" column="0">
-        <widget class="QLabel" name="label">
+        <widget class="QLabel" name="label_target">
          <property name="minimumSize">
           <size>
            <width>0</width>
@@ -90,18 +90,18 @@
         </widget>
        </item>
        <item row="1" column="0">
-        <widget class="QLabel" name="label_2">
+        <widget class="QLabel" name="label_target_desc">
          <property name="text">
           <string>目标阐述：</string>
          </property>
         </widget>
        </item>
        <item row="1" column="1">
-        <widget class="QTextEdit" name="textEdit_2"/>
+        <widget class="QTextEdit" name="textEdit_target_desc"/>
        </item>
       </layout>
      </widget>
-     <widget class="QWidget" name="">
+     <widget class="QWidget" name="layoutWidget">
       <property name="geometry">
        <rect>
         <x>11</x>
@@ -110,19 +110,19 @@
         <height>270</height>
        </rect>
       </property>
-      <layout class="QGridLayout" name="gridLayout_3">
+      <layout class="QGridLayout" name="gridTask">
        <item row="0" column="0">
-        <widget class="QLabel" name="label_3">
+        <widget class="QLabel" name="label_task_target">
          <property name="text">
           <string>选择目标：</string>
          </property>
         </widget>
        </item>
        <item row="0" column="1">
-        <widget class="QComboBox" name="comboBox"/>
+        <widget class="QComboBox" name="comboBox__task_target"/>
        </item>
        <item row="1" column="0">
-        <widget class="QLabel" name="label_4">
+        <widget class="QLabel" name="label_task">
          <property name="text">
           <string>制定任务：</string>
          </property>
@@ -132,7 +132,7 @@
         </widget>
        </item>
        <item row="1" column="1">
-        <widget class="QLineEdit" name="lineEdit_2">
+        <widget class="QLineEdit" name="lineEdit_task">
          <property name="minimumSize">
           <size>
            <width>0</width>
@@ -142,23 +142,23 @@
         </widget>
        </item>
        <item row="2" column="0">
-        <widget class="QLabel" name="label_9">
+        <widget class="QLabel" name="label_task_desc">
          <property name="text">
           <string>任务阐述：</string>
          </property>
         </widget>
        </item>
        <item row="2" column="1">
-        <widget class="QTextEdit" name="textEdit_5"/>
+        <widget class="QTextEdit" name="textEdit_task_desc"/>
        </item>
       </layout>
      </widget>
     </widget>
-    <widget class="QWidget" name="tab_2">
+    <widget class="QWidget" name="tab_quantization">
      <attribute name="title">
       <string>量化</string>
      </attribute>
-     <widget class="QPushButton" name="pushButton_6">
+     <widget class="QPushButton" name="pushButton_quantization_submit">
       <property name="geometry">
        <rect>
         <x>440</x>
@@ -171,7 +171,7 @@
        <string>提交</string>
       </property>
      </widget>
-     <widget class="QWidget" name="">
+     <widget class="QWidget" name="layoutWidget">
       <property name="geometry">
        <rect>
         <x>20</x>
@@ -180,30 +180,30 @@
         <height>51</height>
        </rect>
       </property>
-      <layout class="QFormLayout" name="formLayout">
+      <layout class="QFormLayout" name="formLayout_quantization_target_task">
        <item row="0" column="0">
-        <widget class="QLabel" name="label_10">
+        <widget class="QLabel" name="label_quantization_target">
          <property name="text">
           <string>选择目标：</string>
          </property>
         </widget>
        </item>
        <item row="1" column="0">
-        <widget class="QLabel" name="label_11">
+        <widget class="QLabel" name="label_quantization_task">
          <property name="text">
           <string>选择任务：</string>
          </property>
         </widget>
        </item>
        <item row="1" column="1">
-        <widget class="QComboBox" name="comboBox_4"/>
+        <widget class="QComboBox" name="comboBox_quantization_task"/>
        </item>
        <item row="0" column="1">
-        <widget class="QComboBox" name="comboBox_3"/>
+        <widget class="QComboBox" name="comboBox_quantization_target"/>
        </item>
       </layout>
      </widget>
-     <widget class="QWidget" name="">
+     <widget class="QWidget" name="layoutWidget">
       <property name="geometry">
        <rect>
         <x>20</x>
@@ -212,20 +212,20 @@
         <height>23</height>
        </rect>
       </property>
-      <layout class="QHBoxLayout" name="horizontalLayout">
+      <layout class="QHBoxLayout" name="horizontalLayout_quantization_content">
        <item>
-        <widget class="QLabel" name="label_13">
+        <widget class="QLabel" name="label_content_quantization">
          <property name="text">
           <string>内容量化：</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_5"/>
+        <widget class="QLineEdit" name="lineEdit_quantization_content"/>
        </item>
       </layout>
      </widget>
-     <widget class="QWidget" name="">
+     <widget class="QWidget" name="layoutWidget">
       <property name="geometry">
        <rect>
         <x>21</x>
@@ -234,19 +234,19 @@
         <height>23</height>
        </rect>
       </property>
-      <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <layout class="QHBoxLayout" name="horizontalLayout_min_time">
        <item>
-        <widget class="QLabel" name="label_12">
+        <widget class="QLabel" name="label_min_time">
          <property name="text">
           <string>最短时间：</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_6"/>
+        <widget class="QLineEdit" name="lineEdit_min_time"/>
        </item>
        <item>
-        <widget class="QLabel" name="label_24">
+        <widget class="QLabel" name="label_min_time_unit">
          <property name="text">
           <string>分钟</string>
          </property>
@@ -254,7 +254,7 @@
        </item>
       </layout>
      </widget>
-     <widget class="QWidget" name="">
+     <widget class="QWidget" name="layoutWidget">
       <property name="geometry">
        <rect>
         <x>330</x>
@@ -263,19 +263,19 @@
         <height>23</height>
        </rect>
       </property>
-      <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <layout class="QHBoxLayout" name="horizontalLayout_max_time">
        <item>
-        <widget class="QLabel" name="label_23">
+        <widget class="QLabel" name="label_max_time">
          <property name="text">
           <string>最长时间：</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_11"/>
+        <widget class="QLineEdit" name="lineEdit_max_time"/>
        </item>
        <item>
-        <widget class="QLabel" name="label_25">
+        <widget class="QLabel" name="label_max_time_uint">
          <property name="text">
           <string>分钟</string>
          </property>
@@ -283,7 +283,7 @@
        </item>
       </layout>
      </widget>
-     <widget class="QWidget" name="">
+     <widget class="QWidget" name="layoutWidget">
       <property name="geometry">
        <rect>
         <x>20</x>
@@ -292,25 +292,25 @@
         <height>194</height>
        </rect>
       </property>
-      <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <layout class="QHBoxLayout" name="horizontalLayout_quantization_desc">
        <item>
-        <widget class="QLabel" name="label_26">
+        <widget class="QLabel" name="label_quantization_desc">
          <property name="text">
           <string>量化阐述：</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QTextEdit" name="textEdit"/>
+        <widget class="QTextEdit" name="textEdit_quantization_desc"/>
        </item>
       </layout>
      </widget>
     </widget>
-    <widget class="QWidget" name="tab_4">
+    <widget class="QWidget" name="tab_advance">
      <attribute name="title">
       <string>高级</string>
      </attribute>
-     <widget class="QLabel" name="label_27">
+     <widget class="QLabel" name="label_advance_target">
       <property name="geometry">
        <rect>
         <x>12</x>
@@ -323,7 +323,7 @@
        <string>选择目标：</string>
       </property>
      </widget>
-     <widget class="QComboBox" name="comboBox_8">
+     <widget class="QComboBox" name="comboBox_advance_target">
       <property name="geometry">
        <rect>
         <x>80</x>
@@ -333,7 +333,7 @@
        </rect>
       </property>
      </widget>
-     <widget class="QComboBox" name="comboBox_9">
+     <widget class="QComboBox" name="comboBox_target_important">
       <property name="geometry">
        <rect>
         <x>80</x>
@@ -343,7 +343,7 @@
        </rect>
       </property>
      </widget>
-     <widget class="QLabel" name="label_28">
+     <widget class="QLabel" name="label_target_important">
       <property name="geometry">
        <rect>
         <x>11</x>
@@ -356,7 +356,7 @@
        <string>重要程度：</string>
       </property>
      </widget>
-     <widget class="QLabel" name="label_62">
+     <widget class="QLabel" name="label_urgency">
       <property name="geometry">
        <rect>
         <x>193</x>
@@ -369,10 +369,10 @@
        <string>紧急程度：</string>
       </property>
      </widget>
-     <widget class="QLabel" name="label_63">
+     <widget class="QLabel" name="label_target_priority">
       <property name="geometry">
        <rect>
-        <x>380</x>
+        <x>390</x>
         <y>40</y>
         <width>75</width>
         <height>21</height>
@@ -382,11 +382,11 @@
        <string>优先级别：</string>
       </property>
      </widget>
-     <widget class="QLabel" name="label_59">
+     <widget class="QLabel" name="label_task_important">
       <property name="geometry">
        <rect>
         <x>11</x>
-        <y>112</y>
+        <y>120</y>
         <width>75</width>
         <height>21</height>
        </rect>
@@ -395,11 +395,11 @@
        <string>重要程度：</string>
       </property>
      </widget>
-     <widget class="QLabel" name="label_64">
+     <widget class="QLabel" name="label_task_urgency">
       <property name="geometry">
        <rect>
-        <x>191</x>
-        <y>119</y>
+        <x>190</x>
+        <y>120</y>
         <width>75</width>
         <height>16</height>
        </rect>
@@ -408,10 +408,10 @@
        <string>紧急程度：</string>
       </property>
      </widget>
-     <widget class="QLabel" name="label_65">
+     <widget class="QLabel" name="label_task_priority">
       <property name="geometry">
        <rect>
-        <x>380</x>
+        <x>390</x>
         <y>120</y>
         <width>71</width>
         <height>21</height>
@@ -421,7 +421,7 @@
        <string>优先级别：</string>
       </property>
      </widget>
-     <widget class="QComboBox" name="comboBox_25">
+     <widget class="QComboBox" name="comboBox_task_priority">
       <property name="geometry">
        <rect>
         <x>460</x>
@@ -431,7 +431,7 @@
        </rect>
       </property>
      </widget>
-     <widget class="QComboBox" name="comboBox_26">
+     <widget class="QComboBox" name="comboBox_task_urgency">
       <property name="geometry">
        <rect>
         <x>260</x>
@@ -441,31 +441,31 @@
        </rect>
       </property>
      </widget>
-     <widget class="QComboBox" name="comboBox_20">
+     <widget class="QComboBox" name="comboBox_advance_task">
       <property name="geometry">
        <rect>
         <x>80</x>
-        <y>80</y>
+        <y>90</y>
         <width>471</width>
         <height>21</height>
        </rect>
       </property>
      </widget>
-     <widget class="QComboBox" name="comboBox_21">
+     <widget class="QComboBox" name="comboBox_task_important">
       <property name="geometry">
        <rect>
         <x>80</x>
-        <y>110</y>
+        <y>120</y>
         <width>101</width>
         <height>21</height>
        </rect>
       </property>
      </widget>
-     <widget class="QLabel" name="label_60">
+     <widget class="QLabel" name="label_advance_task">
       <property name="geometry">
        <rect>
         <x>11</x>
-        <y>82</y>
+        <y>90</y>
         <width>75</width>
         <height>16</height>
        </rect>
@@ -474,7 +474,7 @@
        <string>选择任务：</string>
       </property>
      </widget>
-     <widget class="QComboBox" name="comboBox_27">
+     <widget class="QComboBox" name="comboBox_target_urgency">
       <property name="geometry">
        <rect>
         <x>260</x>
@@ -484,17 +484,17 @@
        </rect>
       </property>
      </widget>
-     <widget class="QComboBox" name="comboBox_28">
+     <widget class="QComboBox" name="comboBox_target_priority">
       <property name="geometry">
        <rect>
-        <x>450</x>
+        <x>460</x>
         <y>40</y>
         <width>91</width>
         <height>21</height>
        </rect>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton_13">
+     <widget class="QPushButton" name="pushButton_advance_submit">
       <property name="geometry">
        <rect>
         <x>320</x>
@@ -507,7 +507,7 @@
        <string>提交</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton_14">
+     <widget class="QPushButton" name="pushButton_advance_setting">
       <property name="geometry">
        <rect>
         <x>450</x>
@@ -521,20 +521,10 @@
       </property>
      </widget>
     </widget>
-    <widget class="QWidget" name="tab_3">
+    <widget class="QWidget" name="tab_summarize">
      <attribute name="title">
       <string>总结</string>
      </attribute>
-     <widget class="QTreeView" name="treeView">
-      <property name="geometry">
-       <rect>
-        <x>180</x>
-        <y>190</y>
-        <width>256</width>
-        <height>192</height>
-       </rect>
-      </property>
-     </widget>
     </widget>
    </widget>
   </widget>
@@ -547,23 +537,23 @@
      <height>26</height>
     </rect>
    </property>
-   <widget class="QMenu" name="menu">
+   <widget class="QMenu" name="menu_file">
     <property name="title">
      <string>文件</string>
     </property>
     <addaction name="actionopen"/>
     <addaction name="actionnew"/>
    </widget>
-   <widget class="QMenu" name="menu_2">
+   <widget class="QMenu" name="menu_view">
     <property name="title">
      <string>视图</string>
     </property>
-    <addaction name="actionguihua"/>
-    <addaction name="actionlianghualiebiao"/>
-    <addaction name="actionshixuttu"/>
+    <addaction name="action_target_task_dendrogram"/>
+    <addaction name="action_quantization_list"/>
+    <addaction name="action_advance_sequence_diagram"/>
    </widget>
-   <addaction name="menu"/>
-   <addaction name="menu_2"/>
+   <addaction name="menu_file"/>
+   <addaction name="menu_view"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <action name="actionopen">
@@ -576,17 +566,17 @@
     <string>新建</string>
    </property>
   </action>
-  <action name="actionguihua">
+  <action name="action_target_task_dendrogram">
    <property name="text">
     <string>规划树状图</string>
    </property>
   </action>
-  <action name="actionlianghualiebiao">
+  <action name="action_quantization_list">
    <property name="text">
     <string>量化列表</string>
    </property>
   </action>
-  <action name="actionshixuttu">
+  <action name="action_advance_sequence_diagram">
    <property name="text">
     <string>时序图</string>
    </property>
