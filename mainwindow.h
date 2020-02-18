@@ -26,6 +26,16 @@ private slots:
 
     void on_pushButton_advance_setting_clicked();
 
+    void on_actionopen_triggered();
+
+    void on_actionnew_triggered();
+
+    void on_action_target_task_dendrogram_triggered();
+
+    void on_action_quantization_list_triggered();
+
+    void on_action_advance_sequence_diagram_triggered();
+
 private:
     Ui::MainWindow *ui;
 };
