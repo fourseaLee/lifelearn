@@ -18,14 +18,17 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
     contralcenter.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    newfiledlg.cpp
 
 HEADERS += \
     contralcenter.h \
-    mainwindow.h
+    mainwindow.h \
+    newfiledlg.h
 
 FORMS += \
-    mainwindow.ui
+    mainwindow.ui \
+    newfiledlg.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
