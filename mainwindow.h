@@ -3,6 +3,8 @@
 
 #include <QMainWindow>
 
+class ContralCenter;
+
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -35,6 +37,9 @@ private slots:
     void on_action_quantization_list_triggered();
 
     void on_action_advance_sequence_diagram_triggered();
+
+protected:
+    ContralCenter* contralCenter_;
 
 private:
     Ui::MainWindow *ui;

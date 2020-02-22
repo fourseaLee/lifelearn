@@ -19,16 +19,19 @@ SOURCES += \
     contralcenter.cpp \
     main.cpp \
     mainwindow.cpp \
-    newfiledlg.cpp
+    newfiledlg.cpp \
+    viewdlg.cpp
 
 HEADERS += \
     contralcenter.h \
     mainwindow.h \
-    newfiledlg.h
+    newfiledlg.h \
+    viewdlg.h
 
 FORMS += \
     mainwindow.ui \
-    newfiledlg.ui
+    newfiledlg.ui \
+    viewdlg.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

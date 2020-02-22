@@ -2,6 +2,7 @@
 #define CONTRALCENTER_H
 #include <QString>
 #include <vector>
+#include "newfiledlg.h"
 struct Extent
 {
     QString import;
@@ -35,8 +36,14 @@ public:
     ContralCenter();
     ~ContralCenter();
 
-private:
+    void setProFile(const QString& proFile);
 
+protected:
+    bool loadProFile();
+
+
+private:
+    QString proFile_;
     std::vector<Target*> task_;
 };
 
