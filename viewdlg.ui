@@ -18,28 +18,28 @@
     <rect>
      <x>30</x>
      <y>30</y>
-     <width>291</width>
-     <height>201</height>
+     <width>811</width>
+     <height>401</height>
     </rect>
    </property>
   </widget>
   <widget class="QListView" name="listView">
    <property name="geometry">
     <rect>
-     <x>380</x>
-     <y>30</y>
-     <width>256</width>
-     <height>192</height>
+     <x>50</x>
+     <y>40</y>
+     <width>811</width>
+     <height>421</height>
     </rect>
    </property>
   </widget>
   <widget class="QTableView" name="tableView">
    <property name="geometry">
     <rect>
-     <x>80</x>
-     <y>280</y>
-     <width>681</width>
-     <height>191</height>
+     <x>70</x>
+     <y>80</y>
+     <width>771</width>
+     <height>431</height>
     </rect>
    </property>
   </widget>

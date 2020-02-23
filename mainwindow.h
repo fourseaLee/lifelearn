@@ -38,6 +38,8 @@ private slots:
 
     void on_action_advance_sequence_diagram_triggered();
 
+    void on_tabWidget_currentChanged(int index);
+
 protected:
     ContralCenter* contralCenter_;
 

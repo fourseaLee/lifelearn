@@ -29,14 +29,25 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_pushButton_target_submit_clicked()
 {
-    QString target = ui->lineEdit_target->text();
-    QString target_desc = ui->textEdit_target_desc->toPlainText();
-    QMessageBox::information(nullptr, tr("提示"), tr("提交成功"), QMessageBox::Yes, QMessageBox::Yes);
+    Target* target = new Target;
+    target->target = ui->lineEdit_target->text();
+    target->targetDesc = ui->textEdit_target_desc->toPlainText();
+    contralCenter_->addTarget(target);
+    ui->comboBox_task_target->addItem(target->target);
+    ui->comboBox_task_target->setCurrentText(target->target);
+
+  //  QMessageBox::information(nullptr, tr("提示"), tr("提交成功"), QMessageBox::Yes, QMessageBox::Yes);
 }
 
 void MainWindow::on_pushButton_task_add_clicked()
 {
-    QMessageBox::information(nullptr,tr("提示"),tr("添加成功"), QMessageBox::Yes, QMessageBox::Yes);
+    QString target = ui->comboBox_task_target->currentText();
+
+    Task* task = new Task;
+    task->task = ui->lineEdit_task->text();
+    task->taskDesc = ui->textEdit_task_desc->toPlainText();
+    contralCenter_->addTask(target, task);
+    //QMessageBox::information(nullptr,tr("提示"),tr("添加成功"), QMessageBox::Yes, QMessageBox::Yes);
 }
 
 void MainWindow::on_pushButton_quantization_submit_clicked()
@@ -66,22 +77,6 @@ void MainWindow::on_actionnew_triggered()
     s_newFileDlg->exec();
     QString fileName = s_newFileDlg->getNewFile();
     contralCenter_->setProFile(fileName);
-
- /*   QFile * newFile = new QFile;
-    newFile->setFileName(fileName);
-    if(!newFile->open(QIODevice::WriteOnly | QIODevice::Text))
-    {
-        QMessageBox::information(nullptr,tr("打开文件失败"), fileName, QMessageBox::Yes, QMessageBox::Yes);
-    }
-
-    QJsonObject jsonRoot;
-    QJsonArray jsonArray;
-    jsonRoot[tr("target")] = jsonArray;
-    QJsonDocument jsonDoc;
-    jsonDoc.setObject(jsonRoot);
-    QByteArray data = jsonDoc.toJson();
-    newFile->write(QString(data).toUtf8());
-    newFile->close();*/
 }
 
 void MainWindow::on_action_target_task_dendrogram_triggered()
@@ -97,4 +92,9 @@ void MainWindow::on_action_quantization_list_triggered()
 void MainWindow::on_action_advance_sequence_diagram_triggered()
 {
     s_viewDlg->show();
+}
+
+void MainWindow::on_tabWidget_currentChanged(int index)
+{
+    QMessageBox::information(nullptr,tr("提示"),tr("提交成功"), QMessageBox::Yes, QMessageBox::Yes);
 }
